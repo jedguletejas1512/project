@@ -16,6 +16,9 @@ def open_payment():
     root.destroy()
     import payments
 
+def open_attendance():
+    import attendance
+
 def open_info():
     import studentinfo
 
@@ -73,7 +76,9 @@ class MessManagementsystem:
        
         btn_student_info = Button(LeftMenu, text="Student Info", font=("times new roman", 20, "bold"), bg="white", bd=3,
                                   cursor="hand2", command=open_info).pack(side=TOP, fill=X)
-        
+        btn_attendance = Button(LeftMenu, text="Attendance", font=("times new roman", 20, "bold"), bg="white", bd=3,
+                                cursor="hand2", command=open_attendance).pack(side=TOP, fill=X)
+
         btn_exit = Button(LeftMenu, text="Exit", font=("times new roman", 20, "bold"), bg="white", bd=3,
                           cursor="hand2", command=root.quit).pack(side=TOP, fill=X)
 
